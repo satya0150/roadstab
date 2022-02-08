@@ -33,6 +33,39 @@
   font-size: 1.75rem;
   letter-spacing: 3px;
 }
+@media (max-width: 500px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+  .swiper {
+    height: 50vh;
+  }
+  .swiper .swiper-slide img{
+    height: 50vh;
+  }
+  .max-width{
+      padding:0;
+      display: block;
+  }
+  .section-title h1 {
+    font-size: 30px;
+  }
+  .section-title h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.0;
+    line-height:1em; padding-bottom:10px;
+  }
+  .clon {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 300px 50px;
+  }
+  .gallerycolumn img {;
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
 
 .swiper {
     width: 100vw;
@@ -208,24 +241,7 @@
     inherits: false;
   }
   
-  .counter {
-    animation: counter 1s infinite alternate ease-in-out;
-    counter-reset: num var(--num);
-    font: 800 40px system-ui;
-    padding: 2rem;
-  }
-  .counter::after {
-    content: counter(num);
-  }
   
-  @keyframes counter {
-    from {
-      --num: 0;
-    }
-    to {
-      --num: 10;
-    }
-  }
   
  .container{
      display: block;
@@ -259,6 +275,12 @@
     padding: 10px;
   }
   
+  @media (max-width:300px) {
+    .gallerycolumn img {;
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
   /* Style the images inside the grid */
   .gallerycolumn img {
     opacity: 0.8;
